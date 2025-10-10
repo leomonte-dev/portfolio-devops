@@ -92,7 +92,7 @@ export default function DevOpsPortfolio() {
           <div className="flex space-x-8 text-sm">
             <a href="#about" className="text-yellow-300 hover:text-yellow-200 font-semibold">About</a>
             <a href="#skills" className="text-white hover:text-yellow-300">Skills</a>
-            <a href="#projects" className="text-white hover:text-yellow-300">Projects</a>
+            <a href="/projects" className="text-white hover:text-yellow-300">Projects</a>
             <a href="#contact" className="text-white hover:text-yellow-300">Contact</a>
           </div>
         </nav>
@@ -121,7 +121,7 @@ export default function DevOpsPortfolio() {
               <ul className="space-y-1 text-xs">
                 <li><a href="#about" className="text-white hover:text-yellow-300">→ About me</a></li>
                 <li><a href="#skills" className="text-white hover:text-yellow-300">→ Technical skills</a></li>
-                <li><a href="#projects" className="text-white hover:text-yellow-300">→ Projects</a></li>
+                <li><a href="/projects" className="text-white hover:text-yellow-300">→ Projects</a></li>
                 <li><a href="#contact" className="text-white hover:text-yellow-300">→ Contact</a></li>
               </ul>
             </div>
