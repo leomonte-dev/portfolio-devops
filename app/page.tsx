@@ -27,43 +27,25 @@ export default function DevOpsPortfolio() {
     {
       icon: <Database className="w-6 h-6" />,
       title: "Databases",
-      description: "SQL Server, Firebird, MongoDB"
+      description: "SQL Server, Firebird, MongoDB, RDS"
     },
     {
       icon: <Server className="w-6 h-6" />,
-      title: "DevOps & Cloud", 
-      description: "Docker, Kubernetes, AWS, Azure"
+      title: "Languages", 
+      description: "Python, Golang and JavaScript"
     },
     {
       icon: <Settings className="w-6 h-6" />,
-      title: "Automation",
-      description: "Terraform, Jenkins, Ansible, ArgoCD"
+      title: "DevOps & Automation",
+      description: "Terraform, CloudFormation, Docker, Kubernetes, Helm, Jenkins, Ansible, ArgoCD and Bash"
     },
     {
       icon: <BarChart3 className="w-6 h-6" />,
       title: "Monitoring",
-      description: "Prometheus, Zabbix"
+      description: "Prometheus, Zabbix and Grafana"
     }
   ]
 
-  const detailedSkills = [
-    {
-      title: "Programming Languages",
-      description: "Python, Golang, SQL, CSS"
-    },
-    {
-      title: "DevOps & Automation",
-      description: "Terraform, Docker, Kubernetes, Jenkins, Ansible, ArgoCD, Bash scripting"
-    },
-    {
-      title: "Monitoring & Cloud",
-      description: "Prometheus, Zabbix, Azure, AWS"
-    },
-    {
-      title: "Soft Skills",
-      description: "Proactive, excellent communication, teamwork, problem-solving focused"
-    }
-  ]
 
   return (
     <div className="min-h-screen bg-gray-100">
@@ -91,8 +73,8 @@ export default function DevOpsPortfolio() {
         <nav className="bg-gradient-to-r from-gray-800 to-gray-700 px-6 py-2">
           <div className="flex space-x-8 text-sm">
             <a href="#about" className="text-yellow-300 hover:text-yellow-200 font-semibold">About</a>
-            <a href="#skills" className="text-white hover:text-yellow-300">Skills</a>
             <a href="/projects" className="text-white hover:text-yellow-300">Projects</a>
+            <a href="#skills" className="text-white hover:text-yellow-300">Skills</a>
             <a href="#contact" className="text-white hover:text-yellow-300">Contact</a>
           </div>
         </nav>
@@ -185,25 +167,48 @@ export default function DevOpsPortfolio() {
             ))}
           </div>
 
-          {/* Detailed Skills */}
-          <div className="bg-white border border-gray-300 p-6">
-            <h2 className="text-lg font-bold text-gray-800 mb-4 border-b border-gray-200 pb-2">
-              Technical Expertise
-            </h2>
-            <div className="space-y-3">
-              {detailedSkills && detailedSkills.length > 0 && detailedSkills.map((item, index) => (
-                <div key={`detail-${index}`} className="flex items-start">
-                  <ChevronRight className="w-4 h-4 text-blue-600 mt-0.5 mr-2 flex-shrink-0" />
-                  <div>
-                    <div className="text-blue-600 text-sm font-medium">
-                      {item.title}
-                    </div>
-                    <p className="text-xs text-gray-600 mt-1">{item.description}</p>
-                  </div>
+          {/* Retro Linux Terminal */}
+          <div className="bg-black border border-gray-400 p-4 font-mono text-sm">
+            <div className="bg-gray-800 text-green-400 border border-gray-600 p-3 rounded">
+              <div className="flex items-center mb-2">
+                <div className="flex space-x-1 mr-3">
+                  <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                  <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
                 </div>
-              ))}
+                <span className="text-gray-300 text-xs">leomonte-dev@devops:~$</span>
+              </div>
+              <div className="space-y-1 text-xs">
+                <div className="text-green-400">$ cat about.txt</div>
+                <div className="text-gray-300">Welcome to Leonardo Monte's DevOps Portfolio</div>
+                <div className="text-gray-300">System Status: Online</div>
+                <div className="text-gray-300">Current Role: Database Support Analyst (Mid-level)</div>
+                <div className="text-gray-300">Certification: AWS Cloud Practitioner (CLF-02)</div>
+                <div className="text-gray-300">Skills: Docker, Kubernetes, Terraform, Python, Golang</div>
+                <div className="text-gray-300">Location: Brazil</div>
+                <div className="text-gray-500">---</div>
+                <div className="text-green-400">$ ls -la projects/</div>
+                <div className="text-gray-300">drwxr-xr-x  2 leonardo leonardo 4096 Jan 15 10:30 cs16-server-devops</div>
+                <div className="text-gray-300">drwxr-xr-x  2 leonardo leonardo 4096 Jan 15 10:35 kubernetes-cluster</div>
+                <div className="text-gray-300">drwxr-xr-x  2 leonardo leonardo 4096 Jan 15 10:40 terraform-infrastructure</div>
+                <div className="text-gray-500">---</div>
+                <div className="text-green-400">$ systemctl status devops-skills</div>
+                <div className="text-green-400">● devops-skills.service - DevOps Engineering Skills</div>
+                <div className="text-gray-300">   Active: active (running)</div>
+                <div className="text-gray-300">   Loaded: loaded</div>
+                <div className="text-green-400">   Status: "Ready to automate your infrastructure"</div>
+                <div className="text-gray-500">---</div>
+                <div className="text-green-400">$ echo "Ready for new challenges!"</div>
+                <div className="text-yellow-400">Ready for new challenges!</div>
+                <div className="text-gray-500">---</div>
+                <div className="flex items-center">
+                  <span className="text-green-400">leomonte-dev@devops:~$</span>
+                  <div className="w-2 h-4 bg-green-400 ml-1 animate-pulse"></div>
+                </div>
+              </div>
             </div>
           </div>
+
         </main>
 
         {/* Right Sidebar */}
@@ -240,28 +245,69 @@ export default function DevOpsPortfolio() {
             </div>
           </div>
 
+          {/* Certifications */}
+          <div className="bg-white border border-gray-300 p-4">
+            <h3 className="font-bold text-gray-800 text-sm mb-3">
+              <BarChart3 className="w-4 h-4 inline mr-1" />
+              Certifications
+            </h3>
+            <div className="space-y-3">
+              <div className="bg-gradient-to-r from-orange-50 to-orange-100 border border-orange-200 p-4 rounded">
+                <div className="flex items-center mb-3">
+                  <div className="w-16 h-16 mr-3">
+                    <Image
+                      src="/images/awsbadge.png"
+                      alt="AWS Certified Cloud Practitioner Badge"
+                      width={64}
+                      height={64}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                <div className="text-sm text-orange-700 font-bold mb-2">AWS Certified Cloud Practitioner</div>
+                <div className="text-xs text-orange-600">✓ Certified</div>
+              </div>
+            </div>
+          </div>
+
           {/* Tech Stack */}
           <div className="bg-white border border-gray-300 p-4">
             <h3 className="font-bold text-gray-800 text-sm mb-3">
               <BarChart3 className="w-4 h-4 inline mr-1" />
               Tech Stack
             </h3>
-            <div className="space-y-2 text-xs">
-              <div className="flex justify-between">
-                <span>DevOps:</span>
-                <span className="font-semibold text-blue-600">Docker, K8s</span>
+            <div className="space-y-3 text-xs">
+              <div>
+                <div className="font-semibold text-gray-700 mb-1">Languages:</div>
+                <div className="text-blue-600">Python, Golang, SQL, CSS</div>
               </div>
-              <div className="flex justify-between">
-                <span>Cloud:</span>
-                <span className="font-semibold text-blue-600">AWS, Azure</span>
+              <div>
+                <div className="font-semibold text-gray-700 mb-1">Databases:</div>
+                <div className="text-blue-600">SQL Server, Firebird, MongoDB, RDS</div>
               </div>
-              <div className="flex justify-between">
-                <span>Databases:</span>
-                <span className="font-semibold text-blue-600">SQL, NoSQL</span>
+              <div>
+                <div className="font-semibold text-gray-700 mb-1">DevOps & Automation:</div>
+                <div className="text-blue-600">Terraform, CloudFormation, Docker, Kubernetes, Helm, Jenkins, Ansible, ArgoCD, Bash</div>
               </div>
-              <div className="flex justify-between">
-                <span>Monitoring:</span>
-                <span className="font-semibold text-blue-600">Prometheus</span>
+              <div>
+                <div className="font-semibold text-gray-700 mb-1">CI/CD:</div>
+                <div className="text-blue-600">GitHub Actions, Jenkins</div>
+              </div>
+              <div>
+                <div className="font-semibold text-gray-700 mb-1">Monitoring:</div>
+                <div className="text-blue-600">Prometheus, Zabbix, Grafana</div>
+              </div>
+              <div>
+                <div className="font-semibold text-gray-700 mb-1">AWS Services:</div>
+                <div className="text-blue-600">EC2, S3, VPC, Lambda, RDS</div>
+              </div>
+              <div>
+                <div className="font-semibold text-gray-700 mb-1">Operating Systems:</div>
+                <div className="text-blue-600">Linux, Windows</div>
+              </div>
+              <div>
+                <div className="font-semibold text-gray-700 mb-1">Cloud:</div>
+                <div className="text-blue-600">AWS, Azure</div>
               </div>
             </div>
           </div>

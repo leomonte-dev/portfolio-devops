@@ -50,8 +50,8 @@ export default function ProjectsPage() {
         <nav className="bg-gradient-to-r from-gray-800 to-gray-700 px-6 py-2">
           <div className="flex space-x-8 text-sm">
             <a href="/" className="text-white hover:text-yellow-300">About</a>
-            <a href="/" className="text-white hover:text-yellow-300">Skills</a>
             <a href="/projects" className="text-yellow-300 hover:text-yellow-200 font-semibold">Projects</a>
+            <a href="/" className="text-white hover:text-yellow-300">Skills</a>
             <a href="/" className="text-white hover:text-yellow-300">Contact</a>
           </div>
         </nav>
@@ -248,22 +248,38 @@ export default function ProjectsPage() {
               <BarChart3 className="w-4 h-4 inline mr-1" />
               Tech Stack
             </h3>
-            <div className="space-y-2 text-xs">
-              <div className="flex justify-between">
-                <span>DevOps:</span>
-                <span className="font-semibold text-blue-600">Docker, K8s</span>
+            <div className="space-y-3 text-xs">
+              <div>
+                <div className="font-semibold text-gray-700 mb-1">Languages:</div>
+                <div className="text-blue-600">Python, Golang, SQL, CSS</div>
               </div>
-              <div className="flex justify-between">
-                <span>Cloud:</span>
-                <span className="font-semibold text-blue-600">AWS, Azure</span>
+              <div>
+                <div className="font-semibold text-gray-700 mb-1">Databases:</div>
+                <div className="text-blue-600">SQL Server, Firebird, MongoDB, RDS</div>
               </div>
-              <div className="flex justify-between">
-                <span>Databases:</span>
-                <span className="font-semibold text-blue-600">SQL, NoSQL</span>
+              <div>
+                <div className="font-semibold text-gray-700 mb-1">DevOps & Automation:</div>
+                <div className="text-blue-600">Terraform, CloudFormation, Docker, Kubernetes, Helm, Jenkins, Ansible, ArgoCD, Bash</div>
               </div>
-              <div className="flex justify-between">
-                <span>Monitoring:</span>
-                <span className="font-semibold text-blue-600">Prometheus</span>
+              <div>
+                <div className="font-semibold text-gray-700 mb-1">CI/CD:</div>
+                <div className="text-blue-600">GitHub Actions, Jenkins</div>
+              </div>
+              <div>
+                <div className="font-semibold text-gray-700 mb-1">Monitoring:</div>
+                <div className="text-blue-600">Prometheus, Zabbix, Grafana</div>
+              </div>
+              <div>
+                <div className="font-semibold text-gray-700 mb-1">AWS Services:</div>
+                <div className="text-blue-600">EC2, S3, VPC, Lambda, RDS</div>
+              </div>
+              <div>
+                <div className="font-semibold text-gray-700 mb-1">Operating Systems:</div>
+                <div className="text-blue-600">Linux, Windows</div>
+              </div>
+              <div>
+                <div className="font-semibold text-gray-700 mb-1">Cloud:</div>
+                <div className="text-blue-600">AWS, Azure</div>
               </div>
             </div>
           </div>
