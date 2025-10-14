@@ -72,10 +72,10 @@ export default function DevOpsPortfolio() {
         {/* Navigation Bar */}
         <nav className="bg-gradient-to-r from-gray-800 to-gray-700 px-6 py-2">
           <div className="flex space-x-8 text-sm">
-            <a href="#about" className="text-yellow-300 hover:text-yellow-200 font-semibold">About</a>
+            <a href="/" className="text-yellow-300 hover:text-yellow-200 font-semibold">About</a>
             <a href="/projects" className="text-white hover:text-yellow-300">Projects</a>
-            <a href="#skills" className="text-white hover:text-yellow-300">Skills</a>
-            <a href="#contact" className="text-white hover:text-yellow-300">Contact</a>
+            <a href="/skills" className="text-white hover:text-yellow-300">Skills</a>
+            <a href="/contact" className="text-white hover:text-yellow-300">Contact</a>
           </div>
         </nav>
       </header>
@@ -101,10 +101,10 @@ export default function DevOpsPortfolio() {
             <div className="border-t border-blue-500 pt-4">
               <h4 className="text-sm font-semibold mb-2 text-blue-200">Quick Links</h4>
               <ul className="space-y-1 text-xs">
-                <li><a href="#about" className="text-white hover:text-yellow-300">→ About me</a></li>
-                <li><a href="#skills" className="text-white hover:text-yellow-300">→ Technical skills</a></li>
+                <li><a href="/" className="text-white hover:text-yellow-300">→ About me</a></li>
+                <li><a href="/skills" className="text-white hover:text-yellow-300">→ Technical skills</a></li>
                 <li><a href="/projects" className="text-white hover:text-yellow-300">→ Projects</a></li>
-                <li><a href="#contact" className="text-white hover:text-yellow-300">→ Contact</a></li>
+                <li><a href="/contact" className="text-white hover:text-yellow-300">→ Contact</a></li>
               </ul>
             </div>
           </div>

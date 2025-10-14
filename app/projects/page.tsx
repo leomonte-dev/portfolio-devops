@@ -51,8 +51,8 @@ export default function ProjectsPage() {
           <div className="flex space-x-8 text-sm">
             <a href="/" className="text-white hover:text-yellow-300">About</a>
             <a href="/projects" className="text-yellow-300 hover:text-yellow-200 font-semibold">Projects</a>
-            <a href="/" className="text-white hover:text-yellow-300">Skills</a>
-            <a href="/" className="text-white hover:text-yellow-300">Contact</a>
+            <a href="/skills" className="text-white hover:text-yellow-300">Skills</a>
+            <a href="/contact" className="text-white hover:text-yellow-300">Contact</a>
           </div>
         </nav>
       </header>
@@ -79,9 +79,9 @@ export default function ProjectsPage() {
               <h4 className="text-sm font-semibold mb-2 text-blue-200">Quick Links</h4>
               <ul className="space-y-1 text-xs">
                 <li><a href="/" className="text-white hover:text-yellow-300">→ About me</a></li>
-                <li><a href="/" className="text-white hover:text-yellow-300">→ Technical skills</a></li>
+                <li><a href="/skills" className="text-white hover:text-yellow-300">→ Technical skills</a></li>
                 <li><a href="/projects" className="text-white hover:text-yellow-300">→ Projects</a></li>
-                <li><a href="/" className="text-white hover:text-yellow-300">→ Contact</a></li>
+                <li><a href="/contact" className="text-white hover:text-yellow-300">→ Contact</a></li>
               </ul>
             </div>
           </div>
@@ -132,7 +132,7 @@ export default function ProjectsPage() {
           {/* GitHub Project Showcase */}
           <div className="bg-white border border-gray-300 p-6 mb-8">
             <h2 className="text-lg font-bold text-gray-800 mb-4 border-b border-gray-200 pb-2">
-              Featured Project
+              Featured Projects
             </h2>
             <div className="bg-gradient-to-r from-blue-50 to-gray-50 border border-blue-200 p-6 rounded-lg">
               <div className="flex items-start justify-between">
@@ -152,41 +152,41 @@ export default function ProjectsPage() {
                     CS 1.6 Server DevOps
                   </h3>
                   <p className="text-sm text-gray-600 mb-4">
-                    Servidor Counter-Strike 1.6 containerizado com Docker, incluindo automação completa, 
-                    configuração de administradores, e scripts de gerenciamento. Projeto demonstra 
-                    práticas DevOps com containerização, automação de deploy e monitoramento.
+                    Counter-Strike 1.6 server containerized with Docker, including complete automation,
+                    administrator configuration, and management scripts. Project demonstrates
+                    DevOps practices with containerization, deployment automation, and monitoring.
                   </p>
                   <div className="grid md:grid-cols-2 gap-4 mb-4">
                     <div>
-                      <h4 className="font-semibold text-gray-700 text-sm mb-2">Tecnologias:</h4>
+                      <h4 className="font-semibold text-gray-700 text-sm mb-2">Technologies:</h4>
                       <ul className="text-xs text-gray-600 space-y-1">
                         <li>• Docker & Docker Compose</li>
-                        <li>• Python (Scripts de automação)</li>
-                        <li>• PowerShell (Automação Windows)</li>
+                        <li>• Python (Automation Scripts)</li>
+                        <li>• PowerShell (Windows Automation)</li>
                         <li>• Batch Scripts</li>
                       </ul>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-700 text-sm mb-2">Funcionalidades:</h4>
+                      <h4 className="font-semibold text-gray-700 text-sm mb-2">Features:</h4>
                       <ul className="text-xs text-gray-600 space-y-1">
-                        <li>• Containerização completa</li>
-                        <li>• Configuração automática</li>
-                        <li>• Scripts de start/stop</li>
-                        <li>• Monitoramento de conexão</li>
+                        <li>• Complete containerization</li>
+                        <li>• Automatic configuration</li>
+                        <li>• Start/stop scripts</li>
+                        <li>• Connection monitoring</li>
                       </ul>
                     </div>
                   </div>
                   <div className="flex space-x-4">
-                    <a 
-                      href="https://github.com/leomonte-dev/cs16-server-devops" 
-                      target="_blank" 
+                    <a
+                      href="https://github.com/leomonte-dev/cs16-server-devops"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="bg-gray-800 text-white px-4 py-2 rounded text-sm hover:bg-gray-700 transition-colors flex items-center"
                     >
                       <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clipRule="evenodd" />
                       </svg>
-                      Ver no GitHub
+                      View on GitHub
                     </a>
                   </div>
                 </div>
@@ -196,6 +196,82 @@ export default function ProjectsPage() {
                       <Image
                         src="/images/csmonitor.jpg"
                         alt="CS 1.6 Server Monitor"
+                        fill
+                        className="object-cover rounded-lg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Django Agenda Project */}
+            <div className="bg-gradient-to-r from-green-50 to-gray-50 border border-green-200 p-6 rounded-lg">
+              <div className="flex items-start justify-between">
+                <div className="flex-1">
+                  <div className="flex items-center mb-3">
+                    <div className="bg-green-600 text-white px-3 py-1 rounded text-xs font-semibold mr-3">
+                      Web Development
+                    </div>
+                    <div className="bg-blue-600 text-white px-3 py-1 rounded text-xs font-semibold mr-3">
+                      Django
+                    </div>
+                    <div className="bg-yellow-600 text-white px-3 py-1 rounded text-xs font-semibold mr-3">
+                      Python
+                    </div>
+                    <div className="bg-cyan-600 text-white px-3 py-1 rounded text-xs font-semibold">
+                      Docker
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-800 mb-2">
+                    Django Agenda
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-4">
+                    Contact management web application developed with Django, including
+                    full support for local development and containerized with Docker.
+                    Project demonstrates modern web development practices with CI/CD and environment
+                    configuration for different deployment scenarios.
+                  </p>
+                  <div className="grid md:grid-cols-2 gap-4 mb-4">
+                    <div>
+                      <h4 className="font-semibold text-gray-700 text-sm mb-2">Technologies:</h4>
+                      <ul className="text-xs text-gray-600 space-y-1">
+                        <li>• Python 3.12+ & Django 5.2.7</li>
+                        <li>• PostgreSQL (Docker)</li>
+                        <li>• Docker & Docker Compose</li>
+                        <li>• GitHub Actions (CI/CD)</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-700 text-sm mb-2">Features:</h4>
+                      <ul className="text-xs text-gray-600 space-y-1">
+                        <li>• Contact registration and management</li>
+                        <li>• Local and containerized support</li>
+                        <li>• Continuous integration</li>
+                        <li>• Environment configuration (.env)</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="flex space-x-4">
+                    <a
+                      href="https://github.com/leomonte-dev/django-agenda"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-gray-800 text-white px-4 py-2 rounded text-sm hover:bg-gray-700 transition-colors flex items-center"
+                    >
+                      <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clipRule="evenodd" />
+                      </svg>
+                      View on GitHub
+                    </a>
+                  </div>
+                </div>
+                <div className="hidden lg:block ml-6">
+                  <div className="w-32 h-32 bg-gradient-to-br from-green-100 to-green-200 rounded-lg flex items-center justify-center border border-gray-300 overflow-hidden">
+                    <div className="relative w-full h-full">
+                      <Image
+                        src="/images/django-agenda.png"
+                        alt="Django Agenda Project"
                         fill
                         className="object-cover rounded-lg"
                       />
