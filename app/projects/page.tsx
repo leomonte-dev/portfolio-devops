@@ -1,11 +1,12 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { ChevronRight, Globe, Mail, BarChart3 } from 'lucide-react'
+import { ChevronRight, Globe, Mail, BarChart3, X } from 'lucide-react'
 import Image from 'next/image'
 
 export default function ProjectsPage() {
   const [currentTime, setCurrentTime] = useState(new Date())
+  const [expandedImage, setExpandedImage] = useState<{src: string, alt: string} | null>(null)
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -26,6 +27,31 @@ export default function ProjectsPage() {
 
   return (
     <div className="min-h-screen bg-gray-100">
+      {/* Image Modal */}
+      {expandedImage && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
+          onClick={() => setExpandedImage(null)}
+        >
+          <button
+            onClick={() => setExpandedImage(null)}
+            className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors"
+            aria-label="Close modal"
+          >
+            <X className="w-8 h-8" />
+          </button>
+          <div className="relative max-w-7xl max-h-[90vh] w-full h-full">
+            <Image
+              src={expandedImage.src}
+              alt={expandedImage.alt}
+              fill
+              className="object-contain"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </div>
+        </div>
+      )}
+
       {/* Header */}
       <header className="bg-gradient-to-r from-blue-900 to-blue-800 text-white">
         <div className="flex items-center justify-between px-6 py-3">
@@ -191,7 +217,10 @@ export default function ProjectsPage() {
                   </div>
                 </div>
                 <div className="hidden lg:block ml-6">
-                  <div className="w-32 h-32 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg flex items-center justify-center border border-gray-300 overflow-hidden">
+                  <div
+                    className="w-32 h-32 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg flex items-center justify-center border border-gray-300 overflow-hidden cursor-pointer hover:ring-2 hover:ring-blue-400 transition-all"
+                    onClick={() => setExpandedImage({src: "/images/csmonitor.jpg", alt: "CS 1.6 Server Monitor"})}
+                  >
                     <div className="relative w-full h-full">
                       <Image
                         src="/images/csmonitor.jpg"
@@ -267,7 +296,10 @@ export default function ProjectsPage() {
                   </div>
                 </div>
                 <div className="hidden lg:block ml-6">
-                  <div className="w-32 h-32 bg-gradient-to-br from-green-100 to-green-200 rounded-lg flex items-center justify-center border border-gray-300 overflow-hidden">
+                  <div
+                    className="w-32 h-32 bg-gradient-to-br from-green-100 to-green-200 rounded-lg flex items-center justify-center border border-gray-300 overflow-hidden cursor-pointer hover:ring-2 hover:ring-green-400 transition-all"
+                    onClick={() => setExpandedImage({src: "/images/django-agenda.png", alt: "Django Agenda Project"})}
+                  >
                     <div className="relative w-full h-full">
                       <Image
                         src="/images/django-agenda.png"
