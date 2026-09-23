@@ -120,7 +120,7 @@ export default function DevOpsPortfolio() {
                   <h1 className="text-3xl font-bold text-gray-800 mb-4">
                     DevOps Engineer
                   </h1>
-                  <div className="bg-white border-l-4 border-blue-600 p-4 shadow-sm">
+                  <div className="bg-white border-l-4 border-blue-600 p-4">
                     <p className="text-sm text-gray-700 mb-2">
                       <strong>Experienced in CI/CD, infrastructure automation, and troubleshooting.</strong>
                     </p>
@@ -133,7 +133,7 @@ export default function DevOpsPortfolio() {
                   </div>
                 </div>
                 <div className="hidden lg:block">
-                  <div className="w-48 h-48 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg flex items-center justify-center border border-gray-300">
+                  <div className="w-48 h-48 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center border border-gray-300">
                     <div className="text-center w-full p-4">
                       <div className="relative w-32 h-32 mx-auto -mb-1">
                         <Image
@@ -155,7 +155,7 @@ export default function DevOpsPortfolio() {
           {/* Technical Skills Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
             {technicalSkills && technicalSkills.length > 0 && technicalSkills.map((skill, index) => (
-              <div key={`tech-${index}`} className="bg-white border border-gray-300 p-4 hover:shadow-md transition-shadow">
+              <div key={`tech-${index}`} className="bg-white border border-gray-300 p-4">
                 <div className="flex items-center mb-3">
                   <div className="text-blue-600 mr-3">
                     {skill.icon}
@@ -168,22 +168,27 @@ export default function DevOpsPortfolio() {
           </div>
 
           {/* Retro Linux Terminal */}
-          <div className="bg-black border border-gray-400 p-4 font-mono text-sm">
-            <div className="bg-gray-800 text-green-400 border border-gray-600 p-3 rounded">
-              <div className="flex items-center mb-2">
-                <div className="flex space-x-1 mr-3">
-                  <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                  <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                </div>
-                <span className="text-gray-300 text-xs">leomonte-dev@devops:~$</span>
+          <div className="bg-[#c0c0c0] border-2 border-t-white border-l-white border-b-gray-700 border-r-gray-700 p-1 font-mono text-sm">
+            <div className="flex items-center justify-between bg-gradient-to-r from-[#000080] to-[#1084d0] px-2 py-1 mb-1">
+              <span className="text-white text-xs font-bold font-sans">leomonte-dev@devops:~$</span>
+              <div className="flex space-x-1">
+                {["_", "□", "×"].map((label) => (
+                  <span
+                    key={label}
+                    className="w-4 h-4 bg-[#c0c0c0] text-black text-[10px] leading-none flex items-center justify-center border border-t-white border-l-white border-b-gray-700 border-r-gray-700"
+                  >
+                    {label}
+                  </span>
+                ))}
               </div>
+            </div>
+            <div className="bg-black text-green-400 border-2 border-t-gray-700 border-l-gray-700 border-b-white border-r-white p-3">
               <div className="space-y-1 text-xs">
                 <div className="text-green-400">$ cat about.txt</div>
                 <div className="text-gray-300">Welcome to Leonardo Monte's DevOps Portfolio</div>
                 <div className="text-gray-300">System Status: Online</div>
-                <div className="text-gray-300">Current Role: Database Support Analyst (Mid-level)</div>
-                <div className="text-gray-300">Certification: AWS Cloud Practitioner (CLF-02)</div>
+                <div className="text-gray-300">Current Role: DevOps Engineer</div>
+                <div className="text-gray-300">Certifications: AWS Solutions Architect - Associate (SAA-C03), AWS Cloud Practitioner (CLF-C02)</div>
                 <div className="text-gray-300">Skills: Docker, Kubernetes, Terraform, Python, Golang</div>
                 <div className="text-gray-300">Location: Brazil</div>
                 <div className="text-gray-500">---</div>
@@ -252,7 +257,7 @@ export default function DevOpsPortfolio() {
               Certifications
             </h3>
             <div className="space-y-3">
-              <div className="bg-gradient-to-r from-orange-50 to-orange-100 border border-orange-200 p-4 rounded">
+              <div className="bg-gradient-to-r from-orange-50 to-orange-100 border border-orange-200 p-4">
                 <div className="flex items-center mb-3">
                   <div className="w-16 h-16 mr-3">
                     <Image
@@ -267,7 +272,7 @@ export default function DevOpsPortfolio() {
                 <div className="text-sm text-orange-700 font-bold mb-2">AWS Certified Solutions Architect - Associate (SAA-C03)</div>
                 <div className="text-xs text-orange-600">✓ Certified</div>
               </div>
-              <div className="bg-gradient-to-r from-orange-50 to-orange-100 border border-orange-200 p-4 rounded">
+              <div className="bg-gradient-to-r from-orange-50 to-orange-100 border border-orange-200 p-4">
                 <div className="flex items-center mb-3">
                   <div className="w-16 h-16 mr-3">
                     <Image
