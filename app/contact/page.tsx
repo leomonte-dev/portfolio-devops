@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { ChevronRight, Globe, Mail, BarChart3, Construction } from 'lucide-react'
+import { ChevronRight, Globe, Mail, BarChart3 } from 'lucide-react'
 import Image from 'next/image'
 
 export default function ContactPage() {
@@ -91,63 +91,42 @@ export default function ContactPage() {
         <main className="flex-1 p-6 flex items-center justify-center">
           <div className="max-w-2xl w-full">
             {/* Under Construction Card */}
-            <div className="bg-white border-4 border-yellow-400 p-8 mb-6 shadow-lg">
-              <div className="text-center">
-                <div className="mb-6">
-                  <Construction className="w-24 h-24 text-yellow-500 mx-auto animate-bounce" />
-                </div>
-                <h1 className="text-4xl font-bold text-gray-800 mb-4">
+            <div className="bg-white border-2 border-gray-500 mb-6">
+              <div
+                className="h-5 border-b-2 border-black"
+                style={{ background: "repeating-linear-gradient(45deg, #facc15 0 14px, #000 14px 28px)" }}
+              />
+              <div className="p-8 text-center">
+                <h1
+                  className="text-4xl font-bold text-black uppercase tracking-widest mb-6"
+                  style={{ fontFamily: '"Times New Roman", Times, serif' }}
+                >
                   Under Construction
                 </h1>
-                <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6">
-                  <p className="text-lg text-gray-700 mb-2">
+                <div className="bg-[#ffffcc] border-2 border-t-gray-500 border-l-gray-500 border-b-white border-r-white p-4 mb-6">
+                  <p className="text-lg text-black mb-2">
                     This page is currently being built.
                   </p>
-                  <p className="text-sm text-gray-600">
+                  <p className="text-sm text-gray-700">
                     Check back soon for updates!
                   </p>
                 </div>
 
-                {/* Construction-themed terminal */}
-                <div className="bg-black border border-gray-400 p-4 font-mono text-sm text-left">
-                  <div className="bg-gray-800 text-green-400 border border-gray-600 p-3 rounded">
-                    <div className="flex items-center mb-2">
-                      <div className="flex space-x-1 mr-3">
-                        <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                        <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                        <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                      </div>
-                      <span className="text-gray-300 text-xs">leomonte-dev@devops:~/contact$</span>
-                    </div>
-                    <div className="space-y-1 text-xs">
-                      <div className="text-green-400">$ cat status.txt</div>
-                      <div className="text-yellow-400">⚠️  Page Status: Under Construction</div>
-                      <div className="text-gray-300">Building contact form and information...</div>
-                      <div className="text-gray-300">Expected completion: Soon™</div>
-                      <div className="text-gray-500">---</div>
-                      <div className="text-green-400">$ ls -la ../</div>
-                      <div className="text-gray-300">drwxr-xr-x  about/    ✓ Available</div>
-                      <div className="text-gray-300">drwxr-xr-x  projects/ ✓ Available</div>
-                      <div className="text-yellow-300">drwxr-xr-x  skills/   ⚠ In Progress</div>
-                      <div className="text-yellow-300">drwxr-xr-x  contact/  ⚠ In Progress</div>
-                      <div className="text-gray-500">---</div>
-                      <div className="flex items-center">
-                        <span className="text-green-400">leomonte-dev@devops:~/contact$</span>
-                        <div className="w-2 h-4 bg-green-400 ml-1 animate-pulse"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <a
+                  href="/"
+                  className="inline-block bg-[#c0c0c0] text-black px-6 py-2 border-2 border-t-white border-l-white border-b-gray-700 border-r-gray-700 active:border-t-gray-700 active:border-l-gray-700 active:border-b-white active:border-r-white text-sm"
+                >
+                  &lt;&lt; Back to Home
+                </a>
 
-                <div className="mt-6">
-                  <a
-                    href="/"
-                    className="inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition-colors font-semibold"
-                  >
-                    ← Back to Home
-                  </a>
-                </div>
+                <p className="mt-6 text-xs text-gray-500" style={{ fontFamily: '"Times New Roman", Times, serif' }}>
+                  Best viewed with Netscape Navigator 4.0 at 800x600
+                </p>
               </div>
+              <div
+                className="h-5 border-t-2 border-black"
+                style={{ background: "repeating-linear-gradient(45deg, #facc15 0 14px, #000 14px 28px)" }}
+              />
             </div>
           </div>
         </main>
