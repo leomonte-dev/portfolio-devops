@@ -118,7 +118,7 @@ export default function DevOpsPortfolio() {
               <div className="flex items-center justify-between">
                 <div className="max-w-2xl">
                   <h1 className="text-3xl font-bold text-gray-800 mb-4">
-                    Aspiring DevOps Engineer
+                    DevOps Engineer
                   </h1>
                   <div className="bg-white border-l-4 border-blue-600 p-4 shadow-sm">
                     <p className="text-sm text-gray-700 mb-2">
@@ -252,6 +252,21 @@ export default function DevOpsPortfolio() {
               Certifications
             </h3>
             <div className="space-y-3">
+              <div className="bg-gradient-to-r from-orange-50 to-orange-100 border border-orange-200 p-4 rounded">
+                <div className="flex items-center mb-3">
+                  <div className="w-16 h-16 mr-3">
+                    <Image
+                      src="/images/awsbadge-saac03.png"
+                      alt="AWS Certified Solutions Architect - Associate Badge"
+                      width={64}
+                      height={64}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                <div className="text-sm text-orange-700 font-bold mb-2">AWS Certified Solutions Architect - Associate (SAA-C03)</div>
+                <div className="text-xs text-orange-600">✓ Certified</div>
+              </div>
               <div className="bg-gradient-to-r from-orange-50 to-orange-100 border border-orange-200 p-4 rounded">
                 <div className="flex items-center mb-3">
                   <div className="w-16 h-16 mr-3">
