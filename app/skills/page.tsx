@@ -88,7 +88,7 @@ export default function SkillsPage() {
         </aside>
 
         {/* Main Content */}
-        <main className="flex-1 p-6 flex items-center justify-center">
+        <main className="flex-1 p-6 pt-12 flex items-start justify-center">
           <div className="max-w-2xl w-full">
             {/* Under Construction Card */}
             <div className="bg-white border-2 border-gray-500 mb-6">
