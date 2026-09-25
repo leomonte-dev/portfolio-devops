@@ -35,20 +35,20 @@ export default function ProjectsPage() {
         >
           <button
             onClick={() => setExpandedImage(null)}
-            className="absolute top-4 right-4 bg-[#c0c0c0] text-black p-1 border-2 border-t-white border-l-white border-b-gray-700 border-r-gray-700 active:border-t-gray-700 active:border-l-gray-700 active:border-b-white active:border-r-white"
+            className="absolute top-4 right-4 z-10 bg-[#c0c0c0] text-black p-1 border-2 border-t-white border-l-white border-b-gray-700 border-r-gray-700 active:border-t-gray-700 active:border-l-gray-700 active:border-b-white active:border-r-white"
             aria-label="Close modal"
           >
             <X className="w-5 h-5" />
           </button>
-          <div className="relative max-w-7xl max-h-[90vh] w-full h-full">
-            <Image
-              src={expandedImage.src}
-              alt={expandedImage.alt}
-              fill
-              className="object-contain"
-              onClick={(e) => e.stopPropagation()}
-            />
-          </div>
+          <Image
+            src={expandedImage.src}
+            alt={expandedImage.alt}
+            width={1920}
+            height={1080}
+            sizes="100vw"
+            className="w-auto h-auto max-w-full max-h-[90vh] object-contain"
+            onClick={(e) => e.stopPropagation()}
+          />
         </div>
       )}
 
