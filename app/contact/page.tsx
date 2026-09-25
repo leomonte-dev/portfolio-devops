@@ -28,9 +28,9 @@ export default function ContactPage() {
     <div className="min-h-screen bg-gray-100">
       {/* Header */}
       <header className="bg-gradient-to-r from-blue-900 to-blue-800 text-white">
-        <div className="flex items-center justify-between px-6 py-3">
-          <div className="flex items-center space-x-8">
-            <div className="text-2xl font-bold tracking-wider">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 px-4 md:px-6 py-3">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-8">
+            <div className="text-xl md:text-2xl font-bold tracking-wider">
               <span className="bg-white text-blue-900 px-3 py-1 mr-2">LEONARDO</span>
               <span className="bg-white text-blue-900 px-3 py-1">MONTE</span>
             </div>
@@ -40,15 +40,15 @@ export default function ContactPage() {
             </div>
           </div>
           <div className="flex items-center space-x-4">
-            <a href="mailto:leonardobmbaldo@gmail.com" className="text-white hover:text-yellow-300">
+            <a href="mailto:leonardobmbaldo@gmail.com" className="text-white hover:text-yellow-300 break-all text-sm md:text-base">
               leonardobmbaldo@gmail.com
             </a>
           </div>
         </div>
 
         {/* Navigation Bar */}
-        <nav className="bg-gradient-to-r from-gray-800 to-gray-700 px-6 py-2">
-          <div className="flex space-x-8 text-sm">
+        <nav className="bg-gradient-to-r from-gray-800 to-gray-700 px-4 md:px-6 py-2">
+          <div className="flex flex-wrap gap-x-6 gap-y-1 md:gap-x-8 text-sm">
             <a href="/" className="text-white hover:text-yellow-300">About</a>
             <a href="/projects" className="text-white hover:text-yellow-300">Projects</a>
             <a href="/skills" className="text-white hover:text-yellow-300">Skills</a>
@@ -57,9 +57,9 @@ export default function ContactPage() {
         </nav>
       </header>
 
-      <div className="flex">
+      <div className="flex flex-col lg:flex-row">
         {/* Left Sidebar */}
-        <aside className="w-64 bg-gradient-to-b from-blue-600 to-blue-700 text-white min-h-screen">
+        <aside className="hidden lg:block w-64 shrink-0 bg-gradient-to-b from-blue-600 to-blue-700 text-white min-h-screen">
           <div className="p-4">
             <div className="mb-6">
               <h3 className="text-sm font-semibold mb-3 text-blue-200">Core Competencies</h3>
@@ -88,7 +88,7 @@ export default function ContactPage() {
         </aside>
 
         {/* Main Content */}
-        <main className="flex-1 p-6 pt-12 flex items-start justify-center">
+        <main className="flex-1 min-w-0 p-4 md:p-6 pt-6 md:pt-12 flex items-start justify-center">
           <div className="max-w-2xl w-full">
             {/* Under Construction Card */}
             <div className="bg-white border-2 border-gray-500 mb-6">
@@ -96,9 +96,9 @@ export default function ContactPage() {
                 className="h-5 border-b-2 border-black"
                 style={{ background: "repeating-linear-gradient(45deg, #facc15 0 14px, #000 14px 28px)" }}
               />
-              <div className="p-8 text-center">
+              <div className="p-4 sm:p-8 text-center">
                 <h1
-                  className="text-4xl font-bold text-black uppercase tracking-widest mb-6"
+                  className="text-2xl sm:text-4xl font-bold text-black uppercase tracking-wider sm:tracking-widest mb-6"
                   style={{ fontFamily: '"Times New Roman", Times, serif' }}
                 >
                   Under Construction
@@ -132,7 +132,7 @@ export default function ContactPage() {
         </main>
 
         {/* Right Sidebar */}
-        <aside className="w-64 p-4 space-y-6">
+        <aside className="w-full lg:w-64 shrink-0 p-4 space-y-6">
           {/* Contact Info */}
           <div className="bg-gradient-to-b from-blue-50 to-blue-100 border border-blue-200 p-4">
             <h3 className="font-bold text-blue-800 text-sm mb-2">
@@ -210,8 +210,8 @@ export default function ContactPage() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-gray-800 text-white px-6 py-3">
-        <div className="flex justify-between items-center text-xs">
+      <footer className="bg-gray-800 text-white px-4 md:px-6 py-3">
+        <div className="flex flex-col sm:flex-row gap-2 sm:justify-between sm:items-center text-xs">
           <div className="space-x-4">
             <a href="https://linkedin.com/in/leonardomonte1" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-300">LinkedIn</a>
             <span>|</span>

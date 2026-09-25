@@ -2,17 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  zoom: 120%;
-  -ms-zoom: 120%;
-  -webkit-zoom: 120%;
-}
-
-/* For Firefox which doesn't support zoom */
-@-moz-document url-prefix() {
+/* Zoom only on desktop; mobile keeps native scale */
+@media (min-width: 1024px) {
   :root {
-    transform: scale(1.2);
-    transform-origin: top left;
+    zoom: 120%;
   }
 }
 

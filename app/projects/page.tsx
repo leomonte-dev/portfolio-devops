@@ -54,9 +54,9 @@ export default function ProjectsPage() {
 
       {/* Header */}
       <header className="bg-gradient-to-r from-blue-900 to-blue-800 text-white">
-        <div className="flex items-center justify-between px-6 py-3">
-          <div className="flex items-center space-x-8">
-            <div className="text-2xl font-bold tracking-wider">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 px-4 md:px-6 py-3">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-8">
+            <div className="text-xl md:text-2xl font-bold tracking-wider">
               <span className="bg-white text-blue-900 px-3 py-1 mr-2">LEONARDO</span>
               <span className="bg-white text-blue-900 px-3 py-1">MONTE</span>
             </div>
@@ -66,15 +66,15 @@ export default function ProjectsPage() {
             </div>
           </div>
           <div className="flex items-center space-x-4">
-            <a href="mailto:leonardobmbaldo@gmail.com" className="text-white hover:text-yellow-300">
+            <a href="mailto:leonardobmbaldo@gmail.com" className="text-white hover:text-yellow-300 break-all text-sm md:text-base">
               leonardobmbaldo@gmail.com
             </a>
           </div>
         </div>
 
         {/* Navigation Bar */}
-        <nav className="bg-gradient-to-r from-gray-800 to-gray-700 px-6 py-2">
-          <div className="flex space-x-8 text-sm">
+        <nav className="bg-gradient-to-r from-gray-800 to-gray-700 px-4 md:px-6 py-2">
+          <div className="flex flex-wrap gap-x-6 gap-y-1 md:gap-x-8 text-sm">
             <a href="/" className="text-white hover:text-yellow-300">About</a>
             <a href="/projects" className="text-yellow-300 hover:text-yellow-200 font-semibold">Projects</a>
             <a href="/skills" className="text-white hover:text-yellow-300">Skills</a>
@@ -85,7 +85,7 @@ export default function ProjectsPage() {
 
       <div className="flex">
         {/* Left Sidebar */}
-        <aside className="w-64 bg-gradient-to-b from-blue-600 to-blue-700 text-white min-h-screen">
+        <aside className="hidden lg:block w-64 shrink-0 bg-gradient-to-b from-blue-600 to-blue-700 text-white min-h-screen">
           <div className="p-4">
             <div className="mb-6">
               <h3 className="text-sm font-semibold mb-3 text-blue-200">Core Competencies</h3>
@@ -114,13 +114,13 @@ export default function ProjectsPage() {
         </aside>
 
         {/* Main Content */}
-        <main className="flex-1 p-6">
+        <main className="flex-1 min-w-0 p-4 md:p-6">
           {/* Hero Banner */}
-          <div className="bg-gradient-to-r from-gray-200 to-white border border-gray-300 p-8 mb-6 relative overflow-hidden">
+          <div className="bg-gradient-to-r from-gray-200 to-white border border-gray-300 p-4 md:p-8 mb-6 relative overflow-hidden">
             <div className="relative z-10">
               <div className="flex items-center justify-between">
                 <div className="max-w-2xl">
-                  <h1 className="text-3xl font-bold text-gray-800 mb-4">
+                  <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
                     My Projects
                   </h1>
                   <div className="bg-white border-l-4 border-blue-600 p-4">
@@ -160,10 +160,10 @@ export default function ProjectsPage() {
             <h2 className="text-lg font-bold text-gray-800 mb-4 border-b border-gray-200 pb-2">
               Featured Projects
             </h2>
-            <div className="bg-gradient-to-r from-blue-50 to-gray-50 border border-blue-200 p-6">
-              <div className="flex items-start justify-between">
-                <div className="flex-1">
-                  <div className="flex items-center mb-3">
+            <div className="bg-gradient-to-r from-blue-50 to-gray-50 border border-blue-200 p-4 md:p-6">
+              <div className="flex flex-col-reverse lg:flex-row items-start justify-between gap-4 lg:gap-0">
+                <div className="flex-1 min-w-0">
+                  <div className="flex flex-wrap items-center gap-y-2 mb-3">
                     <div className="bg-blue-600 text-white px-3 py-1 text-xs font-semibold mr-3">
                       DevOps
                     </div>
@@ -216,7 +216,7 @@ export default function ProjectsPage() {
                     </a>
                   </div>
                 </div>
-                <div className="hidden lg:block ml-6">
+                <div className="lg:ml-6">
                   <div
                     className="w-32 h-32 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center border border-gray-300 overflow-hidden cursor-pointer"
                     onClick={() => setExpandedImage({src: "/images/csmonitor.jpg", alt: "CS 1.6 Server Monitor"})}
@@ -235,10 +235,10 @@ export default function ProjectsPage() {
             </div>
 
             {/* Django Agenda Project */}
-            <div className="bg-gradient-to-r from-green-50 to-gray-50 border border-green-200 p-6">
-              <div className="flex items-start justify-between">
-                <div className="flex-1">
-                  <div className="flex items-center mb-3">
+            <div className="bg-gradient-to-r from-green-50 to-gray-50 border border-green-200 p-4 md:p-6">
+              <div className="flex flex-col-reverse lg:flex-row items-start justify-between gap-4 lg:gap-0">
+                <div className="flex-1 min-w-0">
+                  <div className="flex flex-wrap items-center gap-y-2 mb-3">
                     <div className="bg-green-600 text-white px-3 py-1 text-xs font-semibold mr-3">
                       Web Development
                     </div>
@@ -295,7 +295,7 @@ export default function ProjectsPage() {
                     </a>
                   </div>
                 </div>
-                <div className="hidden lg:block ml-6">
+                <div className="lg:ml-6">
                   <div
                     className="w-32 h-32 bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center border border-gray-300 overflow-hidden cursor-pointer"
                     onClick={() => setExpandedImage({src: "/images/django-agenda.png", alt: "Django Agenda Project"})}
@@ -317,7 +317,7 @@ export default function ProjectsPage() {
         </main>
 
         {/* Right Sidebar */}
-        <aside className="w-64 p-4 space-y-6">
+        <aside className="w-full lg:w-64 shrink-0 p-4 space-y-6">
           {/* Contact Info */}
           <div className="bg-gradient-to-b from-blue-50 to-blue-100 border border-blue-200 p-4">
             <h3 className="font-bold text-blue-800 text-sm mb-2">
@@ -395,8 +395,8 @@ export default function ProjectsPage() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-gray-800 text-white px-6 py-3">
-        <div className="flex justify-between items-center text-xs">
+      <footer className="bg-gray-800 text-white px-4 md:px-6 py-3">
+        <div className="flex flex-col sm:flex-row gap-2 sm:justify-between sm:items-center text-xs">
           <div className="space-x-4">
             <a href="https://linkedin.com/in/leonardomonte1" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-300">LinkedIn</a>
             <span>|</span>
