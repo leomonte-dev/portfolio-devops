@@ -51,7 +51,7 @@ export default function DevOpsPortfolio() {
     <div className="min-h-screen bg-gray-100">
       {/* Header */}
       <header className="bg-gradient-to-r from-blue-900 to-blue-800 text-white">
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 px-4 md:px-6 py-3">
+        <div className="max-w-[1600px] mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-2 px-4 md:px-6 py-3">
           <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-8">
             <div className="text-xl md:text-2xl font-bold tracking-wider">
               <span className="bg-white text-blue-900 px-3 py-1 mr-2">LEONARDO</span>
@@ -71,7 +71,7 @@ export default function DevOpsPortfolio() {
 
         {/* Navigation Bar */}
         <nav className="bg-gradient-to-r from-gray-800 to-gray-700 px-4 md:px-6 py-2">
-          <div className="flex flex-wrap gap-x-6 gap-y-1 md:gap-x-8 text-sm">
+          <div className="max-w-[1600px] mx-auto flex flex-wrap gap-x-6 gap-y-1 md:gap-x-8 text-sm">
             <a href="/" className="text-yellow-300 hover:text-yellow-200 font-semibold">About</a>
             <a href="/projects" className="text-white hover:text-yellow-300">Projects</a>
             <a href="/skills" className="text-white hover:text-yellow-300">Skills</a>
@@ -80,7 +80,7 @@ export default function DevOpsPortfolio() {
         </nav>
       </header>
 
-      <div className="flex flex-col lg:flex-row">
+      <div className="max-w-[1600px] mx-auto flex flex-col lg:flex-row">
         {/* Left Sidebar */}
         <aside className="hidden lg:block w-64 shrink-0 bg-gradient-to-b from-blue-600 to-blue-700 text-white min-h-screen">
           <div className="p-4">
@@ -153,7 +153,7 @@ export default function DevOpsPortfolio() {
           </div>
 
           {/* Technical Skills Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+          <div className="grid md:grid-cols-2 2xl:grid-cols-4 gap-4 mb-8">
             {technicalSkills && technicalSkills.length > 0 && technicalSkills.map((skill, index) => (
               <div key={`tech-${index}`} className="bg-white border border-gray-300 p-4">
                 <div className="flex items-center mb-3">
@@ -336,7 +336,7 @@ export default function DevOpsPortfolio() {
 
       {/* Footer */}
       <footer className="bg-gray-800 text-white px-4 md:px-6 py-3">
-        <div className="flex flex-col sm:flex-row gap-2 sm:justify-between sm:items-center text-xs">
+        <div className="max-w-[1600px] mx-auto flex flex-col sm:flex-row gap-2 sm:justify-between sm:items-center text-xs">
           <div className="space-x-4">
             <a href="https://linkedin.com/in/leonardomonte1" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-300">LinkedIn</a>
             <span>|</span>
